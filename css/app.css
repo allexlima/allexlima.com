@@ -142,4 +142,7 @@
     .hero-header {
         padding: 50px 0 0;
     }
+    .about-box, .bg-light-rose{
+        background-size: auto;
+    }
 }
