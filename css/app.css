@@ -149,4 +149,10 @@
         background-size: auto;
         background-position: 0 0;
     }
+    .hero-scroll a {
+        margin-bottom: 25px;
+    }
+    #resume_div{
+        text-align: center;
+    }
 }
