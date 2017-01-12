@@ -144,5 +144,6 @@
     }
     .about-box, .bg-light-rose{
         background-size: auto;
+        background-position: 0 0;
     }
 }
