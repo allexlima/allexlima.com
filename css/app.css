@@ -128,8 +128,11 @@
 }
 
 @media only screen and (max-width: 40em) {
-    .top-bar-section ul, .top-bar-section, .title-area, .top-ba, .top-bar.expanded .title-area {
+    .top-bar-section, .title-area, .top-ba, .top-bar.expanded .title-area {
         background: none;
+    }
+    .top-bar-section ul, .top-bar.expanded .title-area{
+        background: rgba(0, 0, 0, 0.66);
     }
     .top-bar-section li a:not(.button):hover, .top-bar-section ul li>.active{
         background: rgba(0, 0, 0, 0.66);
@@ -140,7 +143,7 @@
         font-size: 3.3em;
     }
     .hero-header {
-        padding: 50px 0 0;
+        padding: 20px 0 0;
     }
     .about-box, .bg-light-rose{
         background-size: auto;
