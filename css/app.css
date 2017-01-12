@@ -23,6 +23,7 @@
 }
 .bg-light-rose{
     background: url("../img/bg.jpg") no-repeat center center fixed;
+    background-size: 100% 100%;
 }
 
 .social,.social-footer{
@@ -70,7 +71,7 @@
 .about-box{
     background: linear-gradient(rgba(25,16,41,0.8),rgba(98,96,120,0.8)),
     url("../img/bg-1.jpg") no-repeat center center fixed;
-
+    background-size: 100%;
 }
 
 .about-box *, .about-box .section-title h2 {
