@@ -14,7 +14,7 @@
     <meta itemprop="name" content="{{ SITENAME }}">
     <meta itemprop="description" content="{{ AUTHOR_DESCRIPTION }}">
 
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
 	<!--[if lte IE 8]><script src="{{ SITEURL }}/theme/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/ie9.css" /><![endif]-->
@@ -23,18 +23,33 @@
 </head>
 
 <body>
-	<section id="sidebar">
-		<div class="inner">
+
+	{% if BlogMode is defined %}
+		<header id="header">
+			<a href="{{ SITEURL }}" class="title">{{ SITENAME }} &middot; Blog</a>
 			<nav>
 				<ul>
 					<li><a href="#intro">Welcome</a></li>
-					<li><a href="#one">Posts</a></li>
+					<li><a href="#one" class="active">Posts</a></li>
 					<li><a href="#two">Research</a></li>
 					<li><a href="#three">Get in touch</a></li>
 				</ul>
 			</nav>
-		</div>
-	</section>		
+		</header>
+	{% else %}
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="#intro">Welcome</a></li>
+						<li><a href="#one">Posts</a></li>
+						<li><a href="#two">Research</a></li>
+						<li><a href="#three">Get in touch</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>		
+	{% endif %}
 
 	<div id="wrapper">
 		{% block main %}

@@ -5,9 +5,11 @@ from __future__ import unicode_literals
 
 SITENAME = 'Allex Lima'
 
-AUTHOR = 'Allex Lima'
+AUTHOR = 'allexlima'
 AUTHOR_DESCRIPTION = "Blablabla"
 
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLE_URL = 'blog/{slug}.html'
 # 
 
 STATIC_PATHS = [
