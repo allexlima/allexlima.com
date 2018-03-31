@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="{{ DEFAULT_LANG }}" itemscope itemtype="http://schema.org/Person">
+<head>
+	{% block head %}
+	<meta charset="utf-8">
+	<meta name="author" content="{{ AUTHOR }}">
+	<meta name="description" content="{{ AUTHOR_DESCRIPTION }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="{{ SITENAME }}">
+    <meta itemprop="description" content="{{ AUTHOR_DESCRIPTION }}">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--[if lte IE 8]><script src="{{ SITEURL }}/theme/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/ie8.css" /><![endif]-->
+	{% endblock %}
+</head>
+
+<body>
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
+					<li><a href="#one">Posts</a></li>
+					<li><a href="#two">Research</a></li>
+					<li><a href="#three">Get in touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>		
+
+	<div id="wrapper">
+		{% block main %}
+		{% endblock %}
+	</div>
+
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+                <li>&copy; 2018 Allex Lima &middot; All rights reserved.</li>
+                <li>Powered by <a href="https://blog.getpelican.com/">Pelican</a>, theme based on <a href="http://html5up.net">hyperspace, from HTML5 UP</a>.</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/jquery.scrollex.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/jquery.scrolly.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/skel.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/util.js"></script>
+	<!--[if lte IE 8]><script src="{{ SITEURL }}/theme/js/ie/respond.min.js"></script><![endif]-->
+	<script src="{{ SITEURL }}/theme/js/main.js"></script>
+</body>
+</html>

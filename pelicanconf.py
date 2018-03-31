@@ -2,15 +2,31 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Allex'
+
 SITENAME = 'Allex Lima'
+
+AUTHOR = 'Allex Lima'
+AUTHOR_DESCRIPTION = "Blablabla"
+
+# 
+
+STATIC_PATHS = [
+    'extra/robots.txt', 
+    'extra/favicon.ico'
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
+
+
+# For dev mode
 SITEURL = 'http://localhost:8000'
 
 THEME = 'theme'
 PATH = 'content'
 
 TIMEZONE = 'America/Manaus'
-
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
