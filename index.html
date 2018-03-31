@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 
 <html lang="en" itemscope itemtype="http://schema.org/Person">
-	<head>
-		<meta charset="utf-8">
-		
-		<meta name="author" content="Allex Lima">
-		<meta name="description" content="Blablabla">
-
-		<title>Allex Lima</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Allex Lima">
+	<meta name="description" content="Blablabla">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
-	</head>
+	<title>Allex Lima</title>
 
-	<body>
-		
-	</body>
+    <!-- schema.org -->
+    <meta itemprop="name" content="Allex Lima">
+    <meta itemprop="description" content="Blablabla">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--[if lte IE 8]><script src="https://allexlima.github.io/allexlima.com/theme/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://allexlima.github.io/allexlima.com/theme/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="https://allexlima.github.io/allexlima.com/theme/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="https://allexlima.github.io/allexlima.com/theme/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
+					<li><a href="#one">Posts</a></li>
+					<li><a href="#two">Research</a></li>
+					<li><a href="#three">Get in touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>		
+
+	<div id="wrapper">
+<!-- Intro -->
+<section id="intro" class="wrapper style1 fullscreen fade-up">
+	<div class="inner">
+		<h1>Hi, I'm Allex!</h1>
+		<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
+		and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+		<ul class="actions">
+			<li><a href="#one" class="button scrolly">Learn more</a></li>
+		</ul>
+	</div>
+</section>
+	</div>
+
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+                <li>&copy; 2018 Allex Lima &middot; All rights reserved.</li>
+                <li>Powered by <a href="https://blog.getpelican.com/">Pelican</a>, theme based on <a href="http://html5up.net">hyperspace, from HTML5 UP</a>.</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="https://allexlima.github.io/allexlima.com/theme/js/jquery.min.js"></script>
+	<script src="https://allexlima.github.io/allexlima.com/theme/js/jquery.scrollex.min.js"></script>
+	<script src="https://allexlima.github.io/allexlima.com/theme/js/jquery.scrolly.min.js"></script>
+	<script src="https://allexlima.github.io/allexlima.com/theme/js/skel.min.js"></script>
+	<script src="https://allexlima.github.io/allexlima.com/theme/js/util.js"></script>
+	<!--[if lte IE 8]><script src="https://allexlima.github.io/allexlima.com/theme/js/ie/respond.min.js"></script><![endif]-->
+	<script src="https://allexlima.github.io/allexlima.com/theme/js/main.js"></script>
+</body>
 </html>
-
-convert favicon.png  -bordercolor white -border 0 \
-      \( -clone 0 -resize 16x16 \) \
-      \( -clone 0 -resize 32x32 \) \
-      \( -clone 0 -resize 48x48 \) \
-      \( -clone 0 -resize 64x64 \) \
-      -delete 0 -alpha off -colors 256 favicon.ico
