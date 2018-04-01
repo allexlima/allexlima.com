@@ -1,0 +1,23 @@
+{% if articles %}
+	<section id="posts" class="wrapper style2 spotlights">
+		<div class="inner">
+		{% for article in articles_page.object_list %}
+			<!-- { % articles_page.object_list %}  -->
+			<section>
+				{% if article.thumbnail %}
+				<img class="image" src="{{ article.thumbnail }}" alt="{{ article.title|striptags }}" data-position="top center" />
+				{% endif %}
+				<div class="content">
+					<div class="inner">
+						<h2>{{ article.title }}</h2>
+						<p>{{ article.summary }}</p>
+						<ul class="actions">
+							<li><a href="{{ SITEURL }}/{{ article.url }}" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		{% endfor %}
+		</div>
+	</section>
+{% endif %}

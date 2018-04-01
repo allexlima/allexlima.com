@@ -208,3 +208,25 @@
 	});
 
 })(jQuery);
+
+$(document).ready(function(){
+
+	// -- Scroll up/down
+	if ($(window).width() <= 736) {
+		var scroll_pos = 0;
+		var scroll_time;
+
+		$(window).scroll(function() {
+		    clearTimeout(scroll_time);
+		    var current_scroll = $(window).scrollTop();
+		    
+		    if (current_scroll >= $('#sidebar').outerHeight()) {
+		        if (current_scroll <= scroll_pos) $('#sidebar').css({'top': '0px'});  
+		        else $('#sidebar').css({'top': '-50px'});  
+		    }
+		        
+		    scroll_time = setTimeout(function() { scroll_pos = $(window).scrollTop(); }, 100);
+		});		
+	}
+
+});

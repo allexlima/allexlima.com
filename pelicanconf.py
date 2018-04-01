@@ -3,31 +3,29 @@
 from __future__ import unicode_literals
 
 
+THEME = './theme'
+PATH = './content'
+
 SITENAME = 'Allex Lima'
 
-AUTHOR = 'allexlima'
+AUTHOR = 'Allex'
 AUTHOR_DESCRIPTION = "Blablabla"
 
 ARTICLE_SAVE_AS = 'blog/{slug}.html'
 ARTICLE_URL = 'blog/{slug}.html'
-# 
-
+#
 STATIC_PATHS = [
-    'extra/robots.txt', 
-    'extra/favicon.ico'
+	'images',
+    'extra/favicon.ico',
 ]
 EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'favicon.ico'},
 }
-
 
 # For dev mode
 SITEURL = 'http://localhost:8000'
 
-THEME = 'theme'
-PATH = 'content'
-
+#
 TIMEZONE = 'America/Manaus'
 DEFAULT_LANG = 'en'
 
@@ -37,6 +35,15 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+## ---------------- Website Internal setting ---
+
+
+MENUS = (('Welcome', '#welcome'),
+		 ('Posts', '#posts'),
+		 ('Research', '#research'),
+		 ('Projects', '#projects'),
+		 ('Get in touch', '#contact'))
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),

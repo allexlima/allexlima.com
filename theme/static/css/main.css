@@ -1,4 +1,5 @@
 @import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:700');
 
 /*
 	Hyperspace by HTML5 UP
@@ -3012,7 +3013,8 @@
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		/*min-height: 22.5em;*/
+		height: 10em;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3874,8 +3876,42 @@
 
 		@media screen and (max-width: 736px) {
 
-			#sidebar {
+/*			#sidebar {
 				display: none;
+			}*/
+
+			#sidebar {
+			display: block;
+			padding: 0 2em;
+			text-align: left;
+			height: 50px;
+			position: fixed;
+			top: 0;
+			transition: top 0.2s ease-in-out;
+			}
+
+			.nav-up {
+				top: -50px; // same as header height. use variables in LESS/SASS
+			}
+
+			#sidebar > nav {
+			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			text-align: inherit;
+			}
+
+			#sidebar > nav > ul > li {
+			margin-left: 1.5em;
+			}
+
+			#sidebar > nav > ul > li a {
+			height: 6em;
+			line-height: 6em;
+			border: 0;
+		    color: rgba(255, 255, 255, 0.35);
+		    display: inline-block;
+		    font-size: 0.6em;
+		    font-weight: bold;
+		    text-transform: uppercase;
 			}
 
 		}
