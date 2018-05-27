@@ -13,16 +13,20 @@
 	<link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico">
 	<!--[if lte IE 8]><script src="{{ SITEURL }}/theme/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/tstyle.css" />
+    {% if BlogMode is defined %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/blog_style.css" />
+    {% endif %}
 	<!--[if lte IE 9]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="{{ SITEURL }}/theme/css/ie8.css" /><![endif]-->
 {% endblock %}
 </head>
 <body>
+
 {% if BlogMode is defined %}
-	<header id="header"><a href="{{ SITEURL }}" class="title">{{ SITENAME }} &middot; Blog</a>
+	<header id="header"><a href="{{ SITEURL }}" class="title">{{ SITENAME }} &middot; Blog</a></header>
 {% else %}
 	<section id="sidebar"><div class="inner">
-{% endif %}
 		<nav><ul>
 		{% for name, link in MENUS %}
 			{% if not articles and name == "Posts" %}
@@ -31,10 +35,7 @@
 			{% endif %}
 		{% endfor %}
 		</ul></nav>
-{% if BlogMode is defined %}
-	</header>
-{% else %}
-	</div></section>	
+	</div></section>
 {% endif %}
 
 	<div id="wrapper">

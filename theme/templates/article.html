@@ -4,27 +4,52 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block main %}
-<section id="main" class="wrapper">
-	<article class="inner">
-		<h1 class="major">{{ article.title }}</h1>
-		<!-- <span class="image fit"><img src="{{ SITEURL }}/theme/images/pic04.jpg" alt="" /></span> -->
-            <div class="entry-content blog-post">
-                {{ article.content }}
+<br>
+<article >
+    <header>
+        <h1>{{ article.title }}</h1>
+        <h3>{{ article.summary }}</h3>
+
+        <div class="post-info">Posted on {{ article.locale_date }}</div>
+
+        {% if article.headerimage %}
+        <figure class="headerimage-article" style="margin:0 auto;">
+            <img src="{{ article.headerimage }}" style="width: 100%;">
+            {% if article.headerimagecaption %}
+            <p class="caption">{{ article.headerimagecaption }}</p>
+            {% endif %}
+        </figure>
+        {% endif %}
+    </header>
+
+    <main>
+      {{article.content}}
+    </main>
+
+    <footer>
+        {% if article.tags %}
+        <ul class="tags">
+            {% for tag in article.tags %}
+             <li><a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+
+        <figure class="author-bio">
+            <div class="profile-image">
+                <img src="/authors/{{ article.author.page_name[7:] }}.png" onerror="this.src='/theme/images/avatar.png'"></img>
             </div>
-            <div class="post_list">
-                <span>By </span>
-                <a href="{{ SITEURL }}/{{ article.author.url }}">@{{ article.author }}</a>
-                <span> in </span>
-                <span class="post_category"><a href="{{ SITEURL }}/{{ article.category.url }}" rel="bookmark"
-                                               title="Permalink to {{ article.category|striptags }}">[ {{ article.category }} ]</a></span>
-                <span class="post_date">{{ article.locale_date }}</span>
-                <div><span>Tags : </span>
-                    {% if article.tags %}
-                        {% for tag in article.tags %}
-                            <span><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}, </a></span>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-	</article>
-</section>
+
+            <figcaption>
+                <h4>About the author</h4>
+                <h3>{{ article.author }} <span><a href="{{ SITEURL }}/authors.html#{{ article.author.page_name[7:] }}"> <i class="fa fa-external-link" aria-hidden="true"></i></a></span></h3>
+                <p>{% if article.author==AUTHOR %}{{ AUTHOR_DESCRIPTION }}{% endif %}</p>
+            </figcaption>
+        </figure>
+
+    </footer>
+
+</article>
+
 {% endblock %}

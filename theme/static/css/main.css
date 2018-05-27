@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 /*
 	Hyperspace by HTML5 UP
@@ -1623,19 +1624,19 @@
 	}
 
 	body {
-		background: #312450;
+		/* background: #312450; */
 	}
 
-		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
+	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
 
 /* Type */
 
@@ -1683,11 +1684,11 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			/* color: #ffffff; */
 		}
 
 	strong, b {
-		color: #ffffff;
+		/* color: #ffffff; */
 		font-weight: bold;
 	}
 
@@ -1700,7 +1701,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		/* /* color: #ffffff; */ */
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -1976,7 +1977,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #ffffff;
+			background-/* color: #ffffff; */
 			color: #312450 !important;
 		}
 
@@ -2324,7 +2325,7 @@
 		}
 
 	label {
-		color: #ffffff;
+		/* color: #ffffff; */
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -2369,7 +2370,7 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ffffff;
+			border-/* color: #ffffff; */
 			box-shadow: 0 0 0 1px #ffffff;
 		}
 
@@ -2408,7 +2409,7 @@
 
 	select option {
 		background-color: #312450;
-		color: #ffffff;
+		/* color: #ffffff; */
 	}
 
 	input[type="text"],
@@ -2482,14 +2483,14 @@
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
-			border-color: #ffffff;
+			border-/* color: #ffffff; */
 			color: #b74e91;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ffffff;
+			border-/* color: #ffffff; */
 			box-shadow: 0 0 0 1px #ffffff;
 		}
 
@@ -3173,7 +3174,7 @@
 		}
 
 		table th {
-			color: #ffffff;
+			/* color: #ffffff; */
 			font-size: 1em;
 			font-weight: bold;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -3255,15 +3256,17 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+            background-color: #04000e;
+			/* background-color: #5e42a6; */
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-/* color: #ffffff; */
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+            background-color: #fafafa;
+			/* background-color: #5052b5; */
 		}
 
 		.wrapper.style2-alt {
@@ -3378,21 +3381,27 @@
 /* Header */
 
 	#header {
+        text-align: center;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #04000e;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
 
+        #header > a{
+            margin: 0 auto;
+        }
+
 		#header > .title {
+            font-family: 'Lobster', cursive;
+            font-weight: 300;
 			border: 0;
 			color: #ffffff;
 			display: block;
-			font-size: 1.25em;
-			font-weight: bold;
+			font-size: 2em;
 		}
 
 		#header > nav {
@@ -3434,7 +3443,7 @@
 						}
 
 						#header > nav > ul > li a.active {
-							color: #ffffff;
+							/* color: #ffffff; */
 						}
 
 		@media screen and (max-width: 736px) {
@@ -3516,16 +3525,17 @@
 		}
 
 	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
+		border-bottom-color: #3c2c62;
 	}
 
 		#footer > .inner a:hover {
+            color: #5e42a6;
 			border-bottom-color: transparent;
 		}
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(0, 0, 0, 0.65);
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3536,7 +3546,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #000;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3773,14 +3783,14 @@
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: rgba(8, 8, 8, 0.6);
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #000000, #3c2c62);
+				background-image: -webkit-linear-gradient(to right, #000000, #3c2c62);
+				background-image: -ms-linear-gradient(to right, #000000, #3c2c62);
+				background-image: linear-gradient(to right, #000000, #3c2c62);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3918,7 +3928,7 @@
 
 /* Intro */
 
-	#intro {
+	#welcome {
 		background-attachment: fixed;
 		background-image: url("./images/intro.svg");
 		background-position: top right;
@@ -3926,13 +3936,13 @@
 		background-size: 100% 100%;
 	}
 
-		#intro p {
+		#welcome p {
 			font-size: 1.25em;
 		}
 
 			@media screen and (max-width: 980px) {
 
-				#intro p br {
+				#welcome p br {
 					display: none;
 				}
 
@@ -3940,7 +3950,7 @@
 
 			@media screen and (max-width: 736px) {
 
-				#intro p {
+				#welcome p {
 					font-size: 1em;
 				}
 
@@ -3948,7 +3958,7 @@
 
 		@media screen and (max-width: 1280px) {
 
-			#intro {
+			#welcome {
 				background-attachment: scroll;
 			}
 

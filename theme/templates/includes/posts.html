@@ -1,23 +1,32 @@
 {% if articles %}
 	<section id="posts" class="wrapper style2 spotlights">
 		<div class="inner">
-		{% for article in articles_page.object_list %}
-			<!-- { % articles_page.object_list %}  -->
-			<section>
-				{% if article.thumbnail %}
-				<img class="image" src="{{ article.thumbnail }}" alt="{{ article.title|striptags }}" data-position="top center" />
-				{% endif %}
-				<div class="content">
-					<div class="inner">
-						<h2>{{ article.title }}</h2>
-						<p>{{ article.summary }}</p>
-						<ul class="actions">
-							<li><a href="{{ SITEURL }}/{{ article.url }}" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
+		{% for article in articles if article.category == "blog" %}
+
+            <div class="postbox">
+                {% if article.thumbnail %}
+                <img src="{{ article.thumbnail }}" alt="{{ article.title|striptags }}">
+                {% else %}
+                <img src="{{ SITEURL }}/theme/images/noimage.jpg" alt="No image">
+                {% endif %}
+
+                <div class="content">
+                    <p class="date">{{ article.locale_date }}</p>
+                    <h1>{{ article.title }}</h1>
+                    <p style="margin-bottom:1rem">{{ article.summary }}</p>
+                </div>
+
+              <a href="{{ SITEURL }}/{{ article.url }}">Read More</a>
+            </div>
+
 		{% endfor %}
 		</div>
+
+
+        <div class="more">
+            <a href="#" class="button small black">See more</a>
+        </div>
+
+
 	</section>
 {% endif %}
