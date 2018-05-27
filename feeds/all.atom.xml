@@ -1,3 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Allex Lima</title><link href="https://allexlima.github.io/allexlima.com/" rel="alternate"></link><link href="https://allexlima.github.io/allexlima.com/feeds/all.atom.xml" rel="self"></link><id>https://allexlima.github.io/allexlima.com/</id><updated>2015-12-03T10:20:00-04:00</updated><entry><title>Post test one</title><link href="https://allexlima.github.io/allexlima.com/blog/post-test-one.html" rel="alternate"></link><published>2015-12-03T10:20:00-04:00</published><updated>2010-12-05T19:30:00-04:00</updated><author><name>Allex</name></author><id>tag:allexlima.github.io,2015-12-03:/allexlima.com/blog/post-test-one.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in &lt;em&gt;the 1960s&lt;/em&gt; with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like &lt;code&gt;Aldus PageMaker&lt;/code&gt; including versions of Lorem Ipsum&lt;/p&gt;
-&lt;p&gt;There are many variations of passages of &lt;strong&gt;Lorem Ipsum&lt;/strong&gt; available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.&lt;/p&gt;</content><category term="blog"></category><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Second test</title><link href="https://allexlima.github.io/allexlima.com/blog/second-test.html" rel="alternate"></link><published>2010-12-04T10:20:00-04:00</published><updated>2010-12-05T19:30:00-04:00</updated><author><name>Allex Lima</name></author><id>tag:allexlima.github.io,2010-12-04:/allexlima.com/blog/second-test.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>My super title</title><link href="https://allexlima.github.io/allexlima.com/blog/my-super-post.html" rel="alternate"></link><published>2010-12-03T10:20:00-04:00</published><updated>2010-12-05T19:30:00-04:00</updated><author><name>Alexis Metaireau</name></author><id>tag:allexlima.github.io,2010-12-03:/allexlima.com/blog/my-super-post.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</content><category term="blog"></category><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Third one =D</title><link href="https://allexlima.github.io/allexlima.com/blog/third-one-d.html" rel="alternate"></link><published>2010-11-03T10:20:00-04:00</published><updated>2010-12-05T19:30:00-04:00</updated><author><name>Alan</name></author><id>tag:allexlima.github.io,2010-11-03:/allexlima.com/blog/third-one-d.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Testing image" src="images/full.png"&gt;&lt;/p&gt;
+&lt;p&gt;There are many variations of passages of &lt;strong&gt;Lorem Ipsum&lt;/strong&gt; available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Python syntax highlighting&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Quote break.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can &lt;em&gt;put&lt;/em&gt; &lt;strong&gt;Markdown&lt;/strong&gt; into a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.&lt;/p&gt;
+&lt;p&gt;Colons can be used to align columns. There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;th&gt;Less&lt;/th&gt;
+&lt;th&gt;Pretty&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;renders&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;a&lt;/td&gt;
+&lt;td&gt;b&lt;/td&gt;
+&lt;td&gt;c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.&lt;/p&gt;</content><category term="blog"></category><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Second test</title><link href="https://allexlima.github.io/allexlima.com/blog/second-test.html" rel="alternate"></link><published>2010-12-04T10:20:00-04:00</published><updated>2010-12-05T19:30:00-04:00</updated><author><name>Allex Lima</name></author><id>tag:allexlima.github.io,2010-12-04:/allexlima.com/blog/second-test.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>My super title</title><link href="https://allexlima.github.io/allexlima.com/blog/my-super-post.html" rel="alternate"></link><published>2010-12-03T10:20:00-04:00</published><updated>2010-12-05T19:30:00-04:00</updated><author><name>Alexis Metaireau</name></author><id>tag:allexlima.github.io,2010-12-03:/allexlima.com/blog/my-super-post.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</content><category term="blog"></category><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Third one =D</title><link href="https://allexlima.github.io/allexlima.com/blog/third-one-d.html" rel="alternate"></link><published>2010-11-03T10:20:00-04:00</published><updated>2010-12-05T19:30:00-04:00</updated><author><name>Alan</name></author><id>tag:allexlima.github.io,2010-11-03:/allexlima.com/blog/third-one-d.html</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry></feed>

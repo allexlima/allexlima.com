@@ -30,15 +30,61 @@
 
         <div class="post-info">Posted on Thu, 03 Dec 2015</div>
 
-        <figure class="headerimage-article" style="margin:0 auto;">
-            <img src="images/full.png" style="width: 100%;">
+        <figure class="headerimage-article">
+            <img src="images/full.png">
             <p class="caption">You can insert a caption to the header image by using the metadata element HeaderImageCaption in your .md / .rstz</p>
         </figure>
     </header>
 
     <main>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in <em>the 1960s</em> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like <code>Aldus PageMaker</code> including versions of Lorem Ipsum</p>
-<p>There are many variations of passages of <strong>Lorem Ipsum</strong> available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+<p><img alt="Testing image" src="images/full.png"></p>
+<p>There are many variations of passages of <strong>Lorem Ipsum</strong> available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+<div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Python syntax highlighting&quot;</span>
+<span class="k">print</span> <span class="n">s</span>
+</pre></div>
+
+
+<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+<p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+<p>Colons can be used to align columns. There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+</tr>
+</tbody>
+</table>
+<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
     </main>
 
     <footer>
@@ -51,12 +97,19 @@
 
         <figure class="author-bio">
             <div class="profile-image">
-                <img src="/authors/allex.png" onerror="this.src='/theme/images/avatar.png'"></img>
+                <!-- <img src="/authors/allex.png" onerror="this.src='/theme/images/avatar.png'"></img> -->
+                <img src="/theme/images/avatar.png" onerror="this.src='/theme/images/avatar.png'"></img>
             </div>
 
             <figcaption>
-                <h4>About the author</h4>
-                <h3>Allex <span><a href="https://allexlima.github.io/allexlima.com/authors.html#allex"> <i class="fa fa-external-link" aria-hidden="true"></i></a></span></h3>
+                <h3><a href="https://allexlima.github.io/allexlima.com/authors.html#allex"> Allex </a></h3>
+                <ul>
+                    <li><a href="#"> <i class="fab fa-github"></i> </a></li>
+                    <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+                    <li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
+                    <li><a href="#"> <i class="fab fa-linkedin"></i> </a></li>
+                </ul>
+                <hr/>
                 <p>Blablabla</p>
             </figcaption>
         </figure>
