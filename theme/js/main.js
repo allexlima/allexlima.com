@@ -219,14 +219,40 @@ $(document).ready(function(){
 		$(window).scroll(function() {
 		    clearTimeout(scroll_time);
 		    var current_scroll = $(window).scrollTop();
-		    
+
 		    if (current_scroll >= $('#sidebar').outerHeight()) {
-		        if (current_scroll <= scroll_pos) $('#sidebar').css({'top': '0px'});  
-		        else $('#sidebar').css({'top': '-50px'});  
+		        if (current_scroll <= scroll_pos) $('#sidebar').css({'top': '0px'});
+		        else $('#sidebar').css({'top': '-50px'});
 		    }
-		        
+
 		    scroll_time = setTimeout(function() { scroll_pos = $(window).scrollTop(); }, 100);
-		});		
+		});
 	}
+
+    var opened = false;
+
+    function close(){
+        $("#sidebar").css({'background': 'rgba(0, 0, 0, 0.45)', 'min-height': '56px'});
+        $("#sidebar nav").css('display', 'none');
+        $("#menu-op").css('display', 'block');
+    }
+
+    $('#menu-op').click(function(event) {
+        alert(1)
+        if(!opened){
+            $("#sidebar").css({'background': 'rgba(0, 0, 0, 0.95)', 'min-height': '400px'});
+            $("#sidebar nav").css('display', 'block');
+            $("#menu-op").css('display', 'none');
+            opened = true;
+        }else{
+            close();
+            opened = false;
+        }
+    });
+
+    $("#sidebar nav ul li").click(function(event) {
+        close();
+        opened = false;
+    });
 
 });
