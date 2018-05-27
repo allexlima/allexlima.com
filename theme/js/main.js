@@ -238,7 +238,6 @@ $(document).ready(function(){
     }
 
     $('#menu-op').click(function(event) {
-        alert(1)
         if(!opened){
             $("#sidebar").css({'background': 'rgba(0, 0, 0, 0.95)', 'min-height': '400px'});
             $("#sidebar nav").css('display', 'block');

@@ -90,3 +90,9 @@
 #posts .black{
     background-color: #b74e91;
 }
+
+@media only screen and (max-width: 658px){
+    .postbox{
+        width: 100%;
+    }
+}
