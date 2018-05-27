@@ -1,0 +1,92 @@
+/* Code from https://codepen.io/Kalyan_Lahkar/pen/wpeaJx */
+
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
+#posts .inner{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 15px;
+}
+
+.postbox{
+    font-family: 'Roboto', sans-serif;
+    width: 290px;
+    overflow: hidden;
+    border-radius: 1px;
+    margin: 1rem auto;
+    position: relative;
+    background-color: #fff;
+    color: rgba(0,0,0,0.6);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
+    display: inline-grid;
+    padding: 0;
+}
+
+.postbox:hover {
+    transform: translateY(-5px);
+    border: none;
+    border-bottom: 5px solid #b74e91;
+}
+
+.postbox img{
+    margin: 0;
+    display: block;
+    width: 100%;
+    max-height: 300px;
+}
+
+.postbox .content{
+    padding: 2rem;
+}
+
+.postbox .date{
+    margin-bottom: 0rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.postbox h1{
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.9);
+    font-size: 2.25rem;
+    margin: 0rem 0rem 1rem 0rem;
+    line-height: 1.25;
+}
+
+.postbox a{
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #b74e91;
+    transition: all 0.25s ease-in;
+}
+
+.postbox a:hover, .postbox a:focus, .postbox a:active{
+  color: #b74e91;
+}
+
+#posts .more{
+    width: 100%;
+    color: #000;
+    text-align: center;
+    margin-top: -3rem;
+    padding: 2rem;
+}
+
+#posts .black{
+    background-color: #b74e91;
+}
