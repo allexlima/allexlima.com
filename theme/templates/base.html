@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="{{ AUTHOR }}">
 	<meta name="description" content="{{ AUTHOR_DESCRIPTION }}">
+    <meta name="theme-color" content="#b74e91">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     <!-- schema.org -->
@@ -27,6 +28,7 @@
 	<header id="header"><a href="{{ SITEURL }}" class="title">{{ SITENAME }} &middot; Blog</a></header>
 {% else %}
 	<section id="sidebar"><div class="inner">
+        <div id="menu-op" ><i class="fas fa-bars"></i></div>
 		<nav><ul>
 		{% for name, link in MENUS %}
 			{% if not articles and name == "Posts" %}

@@ -21,7 +21,7 @@ EXTRA_PATH_METADATA = {
 }
 
 # For dev mode
-SITEURL = 'http://localhost:8000'
+SITEURL = 'http://199.7.9.1:8000'
 
 TIMEZONE = 'America/Manaus'
 DEFAULT_LANG = 'en'
