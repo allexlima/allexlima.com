@@ -13,8 +13,8 @@
         <div class="post-info">Posted on {{ article.locale_date }}</div>
 
         {% if article.headerimage %}
-        <figure class="headerimage-article" style="margin:0 auto;">
-            <img src="{{ article.headerimage }}" style="width: 100%;">
+        <figure class="headerimage-article">
+            <img src="{{ article.headerimage }}">
             {% if article.headerimagecaption %}
             <p class="caption">{{ article.headerimagecaption }}</p>
             {% endif %}
@@ -38,12 +38,19 @@
 
         <figure class="author-bio">
             <div class="profile-image">
-                <img src="/authors/{{ article.author.page_name[7:] }}.png" onerror="this.src='/theme/images/avatar.png'"></img>
+                <!-- <img src="/authors/{{ article.author.page_name[7:] }}.png" onerror="this.src='/theme/images/avatar.png'"></img> -->
+                <img src="/theme/images/avatar.png" onerror="this.src='/theme/images/avatar.png'"></img>
             </div>
 
             <figcaption>
-                <h4>About the author</h4>
-                <h3>{{ article.author }} <span><a href="{{ SITEURL }}/authors.html#{{ article.author.page_name[7:] }}"> <i class="fa fa-external-link" aria-hidden="true"></i></a></span></h3>
+                <h3><a href="{{ SITEURL }}/authors.html#{{ article.author.page_name[7:] }}"> {{ article.author }} </a></h3>
+                <ul>
+                    <li><a href="#"> <i class="fab fa-github"></i> </a></li>
+                    <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+                    <li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
+                    <li><a href="#"> <i class="fab fa-linkedin"></i> </a></li>
+                </ul>
+                <hr/>
                 <p>{% if article.author==AUTHOR %}{{ AUTHOR_DESCRIPTION }}{% endif %}</p>
             </figcaption>
         </figure>
