@@ -250,8 +250,10 @@ $(document).ready(function(){
     });
 
     $("#sidebar nav ul li").click(function(event) {
-        close();
-        opened = false;
+        if(opened){
+            close();
+            opened = false;
+        }
     });
 
 });

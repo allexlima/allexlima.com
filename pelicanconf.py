@@ -12,10 +12,10 @@ AUTHOR = 'Allex'
 AUTHOR_DESCRIPTION = "Blablabla"
 
 ARTICLE_PATHS = ['blog']
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
-ARTICLE_URL = 'blog/{slug}.html'
+ARTICLE_SAVE_AS = '{slug}.html'
+ARTICLE_URL = '{slug}.html'
 
-STATIC_PATHS = ['thumbs', 'extra', 'blog', 'projects', 'research']
+STATIC_PATHS = ['images', 'extra', 'blog', 'projects', 'research']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
 }

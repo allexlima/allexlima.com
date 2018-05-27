@@ -3,7 +3,7 @@ Date: 2015-12-03 10:20
 Modified: 2010-12-05 19:30
 Tags: blog, pelican, publishing
 Summary: Short version for index and feeds
-Thumbnail: thumbs/pic01.jpg
+Thumbnail: images/pic01.jpg
 HeaderImage: images/full.png
 HeaderImageCaption: You can insert a caption to the header image by using the metadata element HeaderImageCaption in your .md / .rstz
 

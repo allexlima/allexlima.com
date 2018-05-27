@@ -3933,10 +3933,11 @@
 
 	#welcome {
 		background-attachment: fixed;
-		background-image: url("./images/intro.svg");
+		background-image: url("./images/bg.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+        color: rgba(255, 255, 255, 0.95);
 	}
 
 		#welcome p {
